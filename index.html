@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="orine.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="counter">counter</h1>
+
+<h2 class="zero" id="zero">0</h2>
+
+<div class="button">
+<button class="incre"  onclick="incrementCounter()">+</button> 
+<button  class="reset" onclick="reset()">reset</button>
+
+<button  class="decre" onclick="decrementCounter()">-</button>
+</div>
+</div>
+
+
+    
+<script>
+let count = 0;
+var counter = document.getElementById("zero");
+
+function incrementCounter(){
+    count++;
+    counter.innerHTML=count;
+}
+function reset(){
+    count=0;
+    counter.innerHTML=count;
+}
+
+function decrementCounter(){
+    count--;
+    counter.innerHTML=count;
+}
+
+</script>
+</body>
+</html>
